@@ -1,0 +1,47 @@
+@media screen and (max-width: 700px) {
+    .container {
+        width: calc(100% - 20px);
+    }
+    .header {
+        padding: 50px 0;
+    }
+    .question__box {
+        padding: 30px 10px 15px;
+    }
+    .option__box {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+    .option label span {
+        padding: 12px;
+    }
+    .btn__primary {
+        padding: 14px 28px;
+        font-size: 15px;
+    }
+    .filter{
+        padding: 20px 0;
+    }
+    .filter__form>div {
+        width: calc(50% - 5px);
+        margin: 5px 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header {
+        padding: 40px 0;
+    }
+    .hero__title{
+        font-size: 45px;
+    }
+    .question {
+        font-size: 16px;
+    }
+    .filter{
+        padding: 15px 0;
+    }
+    .filter__form>div {
+        width: 100%;
+    }
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="hero">
+                <h2 class="hero__title">Quiz</h2>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="popup">
+            <h2 class="popup__title">Warning!</h2>
+            <p class="popup__description">Please select every questions answer and try to submit again</p>
+        </div>
+        <section class="filter">
+            <div class="container">
+                <form class="filter__form">
+                    <div class="filter__number--box">
+                        <input type="number" class="filter__number" id="filter__number" value="10">
+                    </div>
+                    <div class="filter__category--box">
+                        <select name="filter__category" id="filter__category" class="filter__category">
+                            <option value="any">Any Category</option>
+                            <option value="9">General Knowledge</option>
+                            <option value="10">Entertainment: Books</option>
+                            <option value="11">Entertainment: Film</option>
+                            <option value="12">Entertainment: Music</option>
+                            <option value="13">Entertainment: Musicals &amp; Theatres</option>
+                            <option value="14">Entertainment: Television</option>
+                            <option value="15">Entertainment: Video Games</option>
+                            <option value="16">Entertainment: Board Games</option>
+                            <option value="17">Science &amp; Nature</option>
+                            <option value="18">Science: Computers</option>
+                            <option value="19">Science: Mathematics</option>
+                            <option value="20">Mythology</option>
+                            <option value="21">Sports</option>
+                            <option value="22">Geography</option>
+                            <option value="23">History</option>
+                            <option value="24">Politics</option>
+                            <option value="25">Art</option>
+                            <option value="26">Celebrities</option>
+                            <option value="27">Animals</option>
+                            <option value="28">Vehicles</option>
+                            <option value="29">Entertainment: Comics</option>
+                            <option value="30">Science: Gadgets</option>
+                            <option value="31">Entertainment: Japanese Anime &amp; Manga</option>
+                            <option value="32">Entertainment: Cartoon &amp; Animations</option>
+                        </select>
+                    </div>
+                    <div class="filter__difficulty--box">
+                        <select name="filter__difficulty" id="filter__difficulty" class="filter__difficulty">
+                            <option value="any">Any Difficulty</option>
+                            <option value="easy">Easy</option>
+                            <option value="medium">Medium</option>
+                            <option value="hard">Hard</option>
+                        </select>
+                    </div>
+                    <div class="filter__submit--box">
+                        <input class="filter__submit btn__primary" type="submit" value="Take the Test">
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section id="quiz" class="quiz">
+            <div class="container">
+                <div class="quiz__result--box">
+                    <h3 class="quiz__result--title">Your Test Score is</h3>
+                    <h2 class="quiz__result"><span>06</span>/10</h2>
+                </div>
+                <form class="quiz__form">
+                    <!-- <div class="spinner"></div> -->
+                    <!-- Question 01 -->
+                    <!-- <div class="question__box">
+                        <p class="question__number">Question 01</p>
+                        <h3 class="question">What does the &#039;S&#039; stand for in the abbreviation SIM, as in
+                            SIM
+                            card?</h3>
+                        <div class="option__box">
+                            <div class="option">
+                                <input type="radio" name="question1" id="q1o1" value="Single">
+                                <label for="q1o1"><span>Single</span></label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="question1" id="q102" value="Subscriber">
+                                <label for="q102"><span>Subscriber</span></label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="question1" id="q1o3" value="Secure">
+                                <label for="q1o3"><span>Secure</span></label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="question1" id="q1o4" value="Solid">
+                                <label for="q1o4"><span>Solid</span></label>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- Question 02 -->
+                    <!-- <div class="question__box">
+                        <p class="question__number">Question 02</p>
+                        <h3 class="question">Which American president appears on a one dollar bill?</h3>
+                        <div class="option__box">
+                            <div class="option">
+                                <input type="radio" name="question2" id="q2o1" value="Single">
+                                <label for="q2o1"><span>George Washington</span></label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="question2" id="q202" value="Subscriber">
+                                <label for="q202"><span>Thomas Jefferson</span></label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="question2" id="q2o3" value="Secure">
+                                <label for="q2o3"><span>Abraham Lincoln</span></label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="question2" id="q2o4" value="Solid">
+                                <label for="q2o4"><span>Benjamin Franklin</span></label>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- End -->
+                    <!-- <div class="submit__box">
+                        <input class="submit btn__primary" type="submit" value="Submit Answer">
+                    </div> -->
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
