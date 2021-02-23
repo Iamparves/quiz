@@ -48,7 +48,7 @@ const displayQuiz = quizes => {
         ind++;
         const options = quiz.incorrect_answers;
         const random = Math.floor(Math.random() * 4);
-        options.splice(random, 0, quiz.correct_answer)
+        options.splice(random, 0, quiz.correct_answer);
 
         const question = `
                         <div class="question__box">
@@ -56,25 +56,27 @@ const displayQuiz = quizes => {
                             <h3 class="question">${quiz.question}</h3>
                             <div class="option__box">
                                 <div class="option">
-                                    <input type="radio" name="question${ind}" id="q${ind}o1" value="${options[0]}">
+                                    <input type="radio" name="question${ind}" id="q${ind}o1">
                                     <label for="q${ind}o1"><span>${options[0]}</span></label>
                                 </div>
                                 <div class="option">
-                                    <input type="radio" name="question${ind}" id="q${ind}o2" value="${options[1]}">
+                                    <input type="radio" name="question${ind}" id="q${ind}o2">
                                     <label for="q${ind}o2"><span>${options[1]}</span></label>
                                 </div>
                                 <div class="option">
-                                    <input type="radio" name="question${ind}" id="q${ind}o3" value="${options[2]}">
+                                    <input type="radio" name="question${ind}" id="q${ind}o3">
                                     <label for="q${ind}o3"><span>${options[2]}</span></label>
                                 </div>
                                 <div class="option">
-                                    <input type="radio" name="question${ind}" id="q${ind}o4" value="${options[3]}">
+                                    <input type="radio" name="question${ind}" id="q${ind}o4">
                                     <label for="q${ind}o4"><span>${options[3]}</span></label>
                                 </div>
                             </div>
                         </div>
                         `
         quizForm.insertAdjacentHTML('beforeend', question)
+
+        options.forEach((option, optNum) => document.querySelector(`#q${ind}o${optNum + 1}`).value = options[optNum])
     })
 
     const submitBtn = `<div class="submit__box">
